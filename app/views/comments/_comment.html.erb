@@ -1,0 +1,5 @@
+<div>
+  <%= comment.content%>
+  <%= time_tag comment.created_at, "data-local": "time-ago" %>
+  by: <b><%= comment.user.username%></b>
+</div>

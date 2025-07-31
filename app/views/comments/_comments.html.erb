@@ -1,0 +1,6 @@
+<h2>Comments</h2>
+<% if post.comments.present?%>
+  <%= render post.comments %>
+<% end %>
+<br>
+<%= render "comments/new", post: post%>
