@@ -1,5 +1,5 @@
 <div id="<%= dom_id post %>">
   <h2><%= post.title %></h2>
-  <p><%= post.content.to_s.html_safe %></p>
+  <p><%= post.content.to_s %></p>
   <p>By: <b><%= link_to post.user.username, profile_path %></b></p>
 </div>

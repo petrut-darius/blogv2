@@ -129,7 +129,7 @@ GEM
     image_processing (1.14.0)
       mini_magick (>= 4.9.5, < 6)
       ruby-vips (>= 2.0.17, < 3)
-    importmap-rails (2.2.0)
+    importmap-rails (2.2.2)
       actionpack (>= 6.0.0)
       activesupport (>= 6.0.0)
       railties (>= 6.0.0)
@@ -208,11 +208,13 @@ GEM
       date
       stringio
     public_suffix (6.0.2)
-    puma (6.6.0)
+    puma (6.6.1)
       nio4r (~> 2.0)
+    pundit (2.5.0)
+      activesupport (>= 3.0.0)
     raabro (1.4.0)
     racc (1.8.1)
-    rack (3.1.16)
+    rack (3.2.0)
     rack-session (2.1.1)
       base64 (>= 0.1.0)
       rack (>= 3.0.0)
@@ -261,7 +263,7 @@ GEM
       actionpack (>= 5.2)
       railties (>= 5.2)
     rexml (3.4.1)
-    rubocop (1.79.0)
+    rubocop (1.79.1)
       json (~> 2.3)
       language_server-protocol (~> 3.17.0.2)
       lint_roller (~> 1.1.0)
@@ -271,7 +273,6 @@ GEM
       regexp_parser (>= 2.9.3, < 3.0)
       rubocop-ast (>= 1.46.0, < 2.0)
       ruby-progressbar (~> 1.7)
-      tsort (>= 0.2.0)
       unicode-display_width (>= 2.4.0, < 4.0)
     rubocop-ast (1.46.0)
       parser (>= 3.3.7.2)
@@ -334,7 +335,6 @@ GEM
     thruster (0.1.14)
     thruster (0.1.14-x86_64-linux)
     timeout (0.4.3)
-    tsort (0.2.0)
     turbo-rails (2.0.16)
       actionpack (>= 7.1.0)
       railties (>= 7.1.0)
@@ -368,19 +368,20 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
-  actiontext (~> 8.0, >= 8.0.2)
+  actiontext
   bootsnap
   brakeman
   capybara
   debug
   devise (~> 4.9, >= 4.9.4)
   devise-bootstrap-views (~> 1.1)
-  image_processing (~> 1.2)
+  image_processing (>= 1.2)
   importmap-rails
   jbuilder
   kamal
   propshaft
   puma (>= 5.0)
+  pundit (~> 2.5)
   rails (~> 8.0.2)
   rubocop-rails-omakase
   selenium-webdriver
