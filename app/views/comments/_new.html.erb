@@ -1,5 +1,5 @@
 <%= form_with model: [post, Comment.new] do |form|%>
   <p>Add a comment!</p>
-  <%= form.text_area :content, autofocus: true, autocomplete: 'content', class: 'form-control'%>
+  <%= form.rich_textarea :content, autofocus: true, autocomplete: 'content', class: 'form-control'%>
   <%= form.submit%>
 <% end %>

@@ -2,16 +2,15 @@
 
 Your username: <b><%= @user.username%></b><br>
 Your fullname: <b><%= @user.full_name%></b><br>
-Your email: <b><%= @user.email%></b><br>
 <% if @user.bio.present? %>
   Your bio: <b><%= @user.bio%></b><br>
 <% else %>
   You didn't add a bio, edit your profile to add one! 
 <% end %>
 <%= link_to "Edit your profile!", edit_user_registration_path%>
-
-<h2>Postarile acestui utilizator!</h2>
-<% @user.posts.each do |postare| %>
-  <%= render "posts/post", post: postare%>
+<% if @user.admin? %>
+  <h2>Postarile acestui utilizator!</h2>
+  <% @user.posts.each do |postare| %>
+    <%= render "posts/post", post: postare%>
+  <% end %>
 <% end %>
-
