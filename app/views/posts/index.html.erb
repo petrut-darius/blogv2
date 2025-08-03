@@ -12,6 +12,6 @@
     </p>
   <% end %>
 </div>
-<% if current_user.admin?%>
+<% if current_user&.admin? %>
   <%= link_to "New post", new_post_path %>
 <% end %>

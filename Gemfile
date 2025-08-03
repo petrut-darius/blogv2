@@ -68,3 +68,8 @@ gem "devise-bootstrap-views", "~> 1.1"
 gem "actiontext"
 
 gem "pundit", "~> 2.5"
+
+
+group :production do
+  gem "pg", ">= 1.0", "< 2.0"
+end
