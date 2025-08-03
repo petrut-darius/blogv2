@@ -23,7 +23,7 @@ module Blogv2
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
-    config.solid_queue.database_configuration_key = :queue
+    #config.solid_queue.database_configuration_key = :queue
     config.active_job.queue_adapter = :solid_queue
   end
 end
