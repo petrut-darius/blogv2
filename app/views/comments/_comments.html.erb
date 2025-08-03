@@ -3,6 +3,7 @@
   <%= render post.comments %>
 <% end %>
 <br>
+Tre sa te loghezi ca sa poti adauga comentarii!
 <% if user_signed_in? %>
   <%= render "comments/new", post: post%>
 <% end %>
