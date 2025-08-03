@@ -3,4 +3,6 @@
   <%= render post.comments %>
 <% end %>
 <br>
-<%= render "comments/new", post: post%>
+<% if user_signed_in? %>
+  <%= render "comments/new", post: post%>
+<% end %>
