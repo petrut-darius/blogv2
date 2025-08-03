@@ -9,4 +9,6 @@
     <%= button_to "Destroy this post", @post, method: :delete %>
   </div>
 <% end %>
-<%= render "comments/comments", post: @post%>
+<% if user_signed_in? %>
+  <%= render "comments/comments", post: @post%>
+<% end%>
