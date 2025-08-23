@@ -1,24 +1,5 @@
-# README
+This is a Blog type app.
+- you can create blog's and add replies something basic
+- to have the admin superpowers you need to add to a User, ".admin = true"
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a simple app, there is a problem with the action_text you can't paste photos in the replies
